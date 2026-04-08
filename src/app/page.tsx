@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SYMBOLS } from "@/lib/symbols";
 import { formatMoney, formatNumber } from "@/lib/format";
 import { useApp } from "./providers";
+import { HomeSummaryCard } from "@/components/HomeSummaryCard";
 
 export default function Home() {
   const { state, setInitialCash, resetAll, refreshQuotes, setMarketMode, setAutoTick } = useApp();
@@ -24,6 +25,10 @@ export default function Home() {
           所有逻辑在前端运行，使用本地模拟数据，支持静态导出部署到 Cloudflare
           Pages。
         </p>
+
+        <div className="mt-6">
+          <HomeSummaryCard state={state} />
+        </div>
 
         <div className="mt-6 grid gap-4 lg:grid-cols-3">
           <div className="rounded-2xl border border-black/10 p-4 dark:border-white/10">
