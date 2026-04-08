@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-10">
       <div className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-black">
-        <h1 className="text-2xl font-semibold tracking-tight">网页版投资模拟器</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">模拟投资</h1>
         <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
           所有逻辑在前端运行，使用本地模拟数据，支持静态导出部署到 Cloudflare
           Pages。

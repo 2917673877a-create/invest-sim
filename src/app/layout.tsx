@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "投资模拟器",
-  description: "前端本地运行的投资模拟器（静态导出）",
+  title: "模拟投资",
+  description: "前端本地运行的模拟投资应用（静态导出）",
 };
 
 export default function RootLayout({
@@ -34,7 +34,7 @@ export default function RootLayout({
           <header className="sticky top-0 z-10 border-b border-black/10 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-black/60">
             <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
               <Link href="/" className="font-semibold tracking-tight">
-                投资模拟器
+                模拟投资
               </Link>
               <nav className="flex items-center gap-4 text-sm">
                 <Link
